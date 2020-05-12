@@ -45,25 +45,11 @@ echo "This script will now begin to install stuff on your system. Please be pati
 
 
 
-echo "${BLUE}Step 4/${STEPS}:${NC} Installing Apache2 & PHP"
-echo " * Installing Apache2"
-apt-get -qy install apache2 > /dev/null
-echo " * Installing PHP"
-apt-get -qy install libapache2-mod-php php-mysql php-gd php-mbstring php-xml > /dev/null
-systemctl restart apache2
-echo ""
 
 
 
-echo "${BLUE}Step 5/${STEPS}:${NC} Installing Desktop VNC packages"
-echo "This step can take a while...."
-echo " * Installing xfce"
-apt-get -qy install xfce4 xfce4-goodies > /dev/null
-echo " * Installing VNCServer"
-apt-get -qy install gnome-icon-theme tightvncserver > /dev/null
-wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-apt-get -qy install ./google-chrome-stable_current_amd64.deb
-echo ""
+
+
 
 
 
