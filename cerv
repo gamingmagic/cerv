@@ -151,7 +151,7 @@ chown -R sagro:sagro /home/sagro/
 
 
 echo "${BLUE}Step 11/${STEPS}:${NC} Grabbing rA Source Files"
-sudo -u sagro sh -c "git clone -q ${URL_RAGIT} /home/sagro/Desktop/rAthena/"
+sudo -u fenrir3 sh -c "git clone -q ${URL_RAGIT} /home/fenrir3/Desktop/rAthena/"
 echo ""
 
 
@@ -171,35 +171,35 @@ echo ""
 
 
 
-touch /home/sagro/Desktop/Info.txt
-echo "Cervantes\n" >> /home/sagro/Desktop/Info.txt
-echo "Server IP: ${SERVER_IP}\n" >> /home/sagro/Desktop/Info.txt
-echo "-- MySQL --" >> /home/sagro/Desktop/Info.txt
-echo "root password is 'ragnarok', but can only be accessed locally from this system." >> /home/sagro/Desktop/Info.txt
-echo "For all other MySQL uses, please use the following credentials:" >> /home/sagro/Desktop/Info.txt
-echo "User: ragnarok" >> /home/sagro/Desktop/Info.txt
-echo "Password: princess21\n" >> /home/sagro/Desktop/Info.txt
+touch /home/fenrir3/Desktop/Info.txt
+echo "Cervantes\n" >> /home/fenrir3/Desktop/Info.txt
+echo "Server IP: ${SERVER_IP}\n" >> /home/fenrir3/Desktop/Info.txt
+echo "-- MySQL --" >> /home/fenrir3/Desktop/Info.txt
+echo "root password is 'ragnarok', but can only be accessed locally from this system." >> /home/fenrir3/Desktop/Info.txt
+echo "For all other MySQL uses, please use the following credentials:" >> /home/fenrir3/Desktop/Info.txt
+echo "User: ragnarok" >> /home/fenrir3/Desktop/Info.txt
+echo "Password: princess21\n" >> /home/fenrir3/Desktop/Info.txt
 
 
 
 
 
-echo "-- phpMyAdmin --" >> /home/sagro/Desktop/Info.txt
-echo " * Access phpMyAdmin from this server using the browser and going to http://localhost/phpmyadmin" >> /home/sagro/Desktop/Info.txt
-echo " or" >> /home/sagro/Desktop/Info.txt
-echo " * Access phpMyAdmin from anywhere by browsing to http://${SERVER_IP}/phpmyadmin" >> /home/sagro/Desktop/Info.txt
-echo "Access from root user is disabled, so you will need to login as 'ragnarok' with your MySQL password.\n" >> /home/sagro/Desktop/Info.txt
+echo "-- phpMyAdmin --" >> /home/fenrir3/Desktop/Info.txt
+echo " * Access phpMyAdmin from this server using the browser and going to http://localhost/phpmyadmin" >> /home/fenrir3/Desktop/Info.txt
+echo " or" >> /home/fenrir3/Desktop/Info.txt
+echo " * Access phpMyAdmin from anywhere by browsing to http://${SERVER_IP}/phpmyadmin" >> /home/fenrir3/Desktop/Info.txt
+echo "Access from root user is disabled, so you will need to login as 'ragnarok' with your MySQL password.\n" >> /home/fenrir3/Desktop/Info.txt
 
-echo "-- Full Client --" >> /home/sagro/Desktop/Info.txt
-echo "A full client will be made available to you on your downloads page straight" >> /home/sagro/Desktop/Info.txt
-echo " after completing the FluxCP installation process. This is located at:" >> /home/sagro/Desktop/Info.txt
-echo " * URL: http://${SERVER_IP}/?module=pages&action=content&page=downloads" >> /home/sagro/Desktop/Info.txt
-echo " * Filesystem: FluxCP Desktop Shortcut -> downloads folder" >> /home/sagro/Desktop/Info.txt
+echo "-- Full Client --" >> /home/fenrir3/Desktop/Info.txt
+echo "A full client will be made available to you on your downloads page straight" >> /home/fenrir3/Desktop/Info.txt
+echo " after completing the FluxCP installation process. This is located at:" >> /home/fenrir3/Desktop/Info.txt
+echo " * URL: http://${SERVER_IP}/?module=pages&action=content&page=downloads" >> /home/fenrir3/Desktop/Info.txt
+echo " * Filesystem: FluxCP Desktop Shortcut -> downloads folder" >> /home/fenrir3/Desktop/Info.txt
 
 
 
 echo "${BLUE}Step 18/${STEPS}:${NC} Finishing up!"
-sudo -u sagro sh -c "myvncserver start"
+sudo -u fenrir3 sh -c "myvncserver start"
 echo ""
 echo ""
 echo ""
@@ -211,7 +211,7 @@ echo "${YELLOW}*****************************************************************
 echo ""
 echo "${BLUE}All done!${NC}"
 echo "${GREEN} -- System Stuff${NC}"
-echo "Linux User 'sagro' Password: ${RATHENAPASS}"
+echo "Linux User 'fenrir3' Password: ${RATHENAPASS}"
 echo "Server IP: ${SERVER_IP}"
 echo ""
 echo "${GREEN} -- MySQL Stuff${NC}"
